@@ -1,0 +1,27 @@
+/** GALLERY-NAV**/
+.gallery-nav{
+  margin-bottom: 30px;
+
+  li{
+    display: inline-block;
+    margin-right: 15px;
+
+    a{
+      color: $brand-color;
+      display: block;
+      border-top: 5px solid transparent;
+      padding-top: 10px;
+
+      &:hover{
+        border-top: 5px solid #eee;
+        color: $link-text;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .gallery-nav{
+    text-align: center;
+  }
+}

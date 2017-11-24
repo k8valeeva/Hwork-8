@@ -1,0 +1,135 @@
+h2{
+  font: $captions-sections-size $base-font-family;
+}
+
+.light{
+  color: $text-color-white;
+  text-align: center;
+
+  &:after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 20px auto 40px;
+    background: $bg-second-light;
+  }
+}
+
+.dark{
+  color: $text-color-dark;
+  text-align: center;
+
+  &:after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin: 20px auto 40px;
+    background: #eeeeee;
+  }
+}
+
+
+.big-text {
+  color: $text-color-white;
+  font: 4.286em $base-font-family;
+
+
+  &-brand {
+    color: $brand-color;
+    font: 4.286em $base-font-family;
+  }
+}
+
+@media (max-width: 991px) {
+  .big-text,
+  .big-text-brand{
+    font-size: 4.286vmin;
+  }
+}
+
+.headers-info{
+  font-size: $secondary-font-size;
+  width: 75%;
+  margin: 0 auto 50px;
+  line-height: 30px;
+  color: $text-color-dark;
+
+  &-light{
+    font-size: $secondary-font-size;
+    width: 75%;
+    margin: 0 auto 50px;
+    line-height: 30px;
+    color: $text-color-white;
+  }
+}
+
+.text-sm-style{
+  font-size: 11px;
+  line-height: 20px;
+  color: $brand-color;
+}
+
+.captions-style{
+  font: $captions-font-size $base-font-family;
+  line-height: $captions-line-height;
+  color: $text-color-white;
+
+  &-brand{
+    font: $captions-font-size $base-font-family;
+    line-height: $captions-line-height;
+    color: $brand-color;
+  }
+
+  &-dark{
+    font: $captions-font-size $base-font-family;
+    line-height: $captions-line-height;
+    color: #111;
+  }
+
+  &-footer{
+    font: 22px/120px $base-font-family;
+    color: $text-color-white;
+  }
+}
+
+@media (max-width: 991px) {
+  .captions-style{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.text-lato{
+  font: $base-font-size $lato-font;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  &-italic{
+    font: $base-font-size $lato-italic;
+    line-height: 35px;
+  }
+}
+
+.big-numbers{
+  font-size: 48px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.gallery-top-text{
+  margin-bottom: 50px;
+}
+
+.second-brand-text{
+  font-size: $base-font-size;
+  color: $second-brand-color;
+  margin-bottom: 30px;
+}
+
+.posts-captions-text{
+  font: $secondary-font-size $base-font-bold;
+  color: $text-color-dark;
+}
+

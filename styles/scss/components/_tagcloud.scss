@@ -1,0 +1,37 @@
+.posts-tag{
+  @include display-flex;
+  margin: 30px 0;
+  font-size: $sm-font-size;
+
+  .tagcloud{
+    a{
+      margin-left: 10px;
+      color: $brand-color;
+
+      &:visited,
+      &:hover{
+        color: $visited-color;
+      }
+    }
+  }
+}
+
+.tags-cloud{
+  @include display-flex;
+  @include flex-wrap(wrap);
+  margin-top: 20px;
+
+  a{
+    display: block;
+    border: 1px solid #eee;
+    padding: 0 9px;
+    color: $brand-color;
+    font-size: $sm-font-size;
+    margin: 0 5px 5px 0;
+
+    &:hover{
+      color: $text-color-white;
+      background: $brand-color;
+    }
+  }
+}

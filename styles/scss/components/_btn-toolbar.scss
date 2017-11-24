@@ -1,0 +1,35 @@
+.btn-toolbar {
+  @include justify-content(center);
+
+  .first-part {
+    margin-right: 10px;
+
+    &::after{
+      content: '...';
+      line-height: 35px;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .first-part::after{
+      display: none;
+    }
+  }
+
+  .btn-secondary {
+    background: none;
+    border: none;
+    color: $brand-color;
+
+    &:hover {
+      color: $text-color-dark;
+      background-color: #eee;
+    }
+  }
+
+  .btn{
+    border-radius: 0;
+    margin: 0 10px;
+  }
+}

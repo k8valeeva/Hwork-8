@@ -1,0 +1,90 @@
+$color: (
+        $yellow,
+        $orange,
+        $pink,
+        $violet,
+        $purple,
+        $blue,
+        $sky-blue
+);
+
+/** TOP-MENU **/
+.top-menu li{
+  @for $i from 1 to 8 {
+    &:nth-child(#{$i}):before{
+      background: nth($color, $i);
+    }
+  }
+}
+
+/** FEATURES-LIST**/
+
+$step: 50;
+$i:1;
+$position: 0;
+@for $i from 1 to 5 {
+  .list-features li:nth-child(#{$i}):before{
+
+    @if $i > 1{
+
+      $position: (($i - 1) * -$step);
+    }
+    background-position: #{$position}px 0;
+  }
+}
+
+/** FOOTER **/
+.footer-info{
+  @for $i from 1 to 5 {
+    &:nth-child(#{$i}):before{
+      background: nth($color, $i);
+    }
+  }
+}
+
+
+$step: 18;
+$i:1;
+$position: 0;
+@for $i from 1 to 4 {
+  .contact-info li:nth-child(#{$i}):before {
+
+    @if $i > 1 {
+
+      $position: (($i - 1) * -$step);
+    }
+    background-position: 0 #{$position}px ;
+  }
+}
+
+
+/** SOCIAL_LIST **/
+$step: 20;
+$i:1;
+$position: 0;
+@for $i from 1 to 6 {
+  .social-list li:nth-child(#{$i}) {
+
+    @if $i > 1 {
+
+      $position: (($i - 1) * -$step);
+    }
+    background-position:  #{$position}px 0;
+  }
+}
+
+/** NET-SOCIAL **/
+$step: 36;
+$i:1;
+$position: 0;
+@for $i from 1 to 6 {
+  .net-social li:nth-child(#{$i}) {
+
+    @if $i > 1 {
+
+      $position: (($i - 1) * -$step);
+    }
+    background-position:  #{$position}px 0;
+  }
+}
+

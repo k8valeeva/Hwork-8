@@ -1,0 +1,50 @@
+a{
+  cursor: pointer;
+  outline: none;
+
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.sm-links{
+  color: $link-text;
+  font: 11px $base-font-family;
+  margin-left: 30px;
+}
+
+a.link-style-brand{
+  color: $brand-color;
+}
+
+.profile-btn-link{
+  padding: 30px 40px;
+  color: $brand-color;
+
+  &:hover{
+    color: $text-color-white;
+  }
+}
+
+.link-color{
+  color: $brand-color;
+
+  &-gray{
+    color: $link-text;
+  }
+}
+
+.social-wrap{
+  margin-right: 20px;
+  vertical-align: middle;
+  font-size: $captions-font-size;
+
+  a{
+    width: 50px;
+    height: 50px;
+    @include display-flex;
+    @include justify-content(center);
+    @include align-items(center);
+  }
+}

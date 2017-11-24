@@ -1,0 +1,20 @@
+.description-section{
+  padding: 50px 0;
+  background: #666;
+  color: $text-color-white;
+
+  .blog-links-wrap{
+    @include justify-content(space-between);
+    @include align-items(center);
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .description-section{
+    text-align: center;
+  }
+  .description-section .blog-links-wrap{
+    @include justify-content(center);
+  }
+}

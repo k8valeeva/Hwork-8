@@ -1,0 +1,27 @@
+.page-link{
+  color: $second-brand-color;
+  border: 2px solid #eee;
+  padding: 0 14px;
+  font-size: 30px;
+
+  &:hover ,
+  &:focus{
+    color: $second-brand-color;
+    border-color: $second-brand-color;
+    background: none;
+  }
+}
+.page-item:first-child .page-link{
+  margin-left: -1px;
+}
+.page-item:first-child .page-link,
+.page-item:last-child .page-link{
+  border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .pagination{
+    @include justify-content(center);
+    margin-top: 15px;
+  }
+}

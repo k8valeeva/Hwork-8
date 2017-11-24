@@ -1,0 +1,31 @@
+.illustration-img,
+.element-img-wrap{
+  max-width: 690px;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  img{
+    display: block;
+  }
+}
+
+.illustration-img{
+  max-height: 900px;
+}
+
+.element-img-wrap{
+  max-height: 520px;
+}
+
+.posts-foto{
+  max-width: 210px;
+  max-height: 160px;
+  overflow: hidden;
+}
+
+.aside-img-wrap{
+  max-width: 210px;
+  max-height: 260px;
+  overflow: hidden;
+  margin: 20px 0;
+}

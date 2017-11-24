@@ -1,0 +1,16 @@
+.bg-top-header{
+  background: $header-bg-color;
+  color: $link-text;
+  padding: 10px 0;
+  font-size: 0.857em;
+
+  .top-header{
+    @include display-flex;
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
+}
+
+.bg-bottom-header{
+  background: $bg-dark-color;
+}

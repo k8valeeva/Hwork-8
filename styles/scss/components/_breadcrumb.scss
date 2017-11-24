@@ -1,0 +1,14 @@
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+  background: none;
+  color: $link-text;
+
+  a{
+    color: $link-text;
+
+    &:hover{
+      color: $text-color-white;
+    }
+  }
+}

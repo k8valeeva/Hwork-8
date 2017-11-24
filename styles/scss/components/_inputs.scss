@@ -1,0 +1,25 @@
+input{
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  font: 12px $lato-font;
+}
+
+.form-group{
+  @include display-flex;
+  @include justify-content(space-between);
+  margin: 0;
+  border: 1px solid lighten($link-text, 20%);
+  padding: 0.417em 1.250em;
+
+  &-search{
+    color: $link-text;
+  }
+
+  .fa-search{
+    color: $link-text;
+  }
+}
+

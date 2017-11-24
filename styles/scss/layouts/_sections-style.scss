@@ -1,0 +1,102 @@
+.our-team,
+.latest-works,
+.company-expirience,
+.quote-section,
+.steal-month
+{
+  padding: 100px 0;
+}
+
+.typography-content,
+.gallery-section,
+.blog-section,
+.comments,
+.elements-section{
+  padding: 50px 0;
+}
+
+.welcome{
+  height: calc(100vh - 129px);
+  background: rgba(0, 0, 0, .7);
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .welcome{
+    height: auto;
+  }
+}
+
+.quote-section,
+.latest-works{
+  background: $bg-dark-color;
+}
+
+.steal-month,
+.latest-works{
+  text-align: center;
+}
+
+.purchase-section,
+.company-expirience{
+  background: $brand-color;
+}
+
+.purchase-section{
+  padding: 60px 0;
+
+  .purchase-wrap{
+    margin: 0 auto;
+  }
+}
+
+.our-features{
+  padding-top: 80px;
+}
+
+.blog-posts{
+  padding: 90px 0;
+}
+
+.blog-section,
+.elements-section,
+.gallery-section{
+  color: $text-color-dark;
+}
+
+@media (max-width: 991px){
+  .company-expirience{
+    padding: 100px 0 0;
+  }
+}
+
+.comments-wrap,
+.element-content{
+  margin: 0 auto;
+}
+
+.comments{
+  background: $bg-light-color;
+}
+
+.posts-info {
+  border-bottom: 1px solid #eee;
+
+  > p{
+    margin-bottom: 35px;
+  }
+}
+
+.blog-content{
+  margin: 0 auto;
+}
+
+.likes-number{
+  @include display-flex;
+  @include align-items(center);
+  margin: 50px 0 30px;
+}
+
+.info-description >p{
+  margin-bottom: 30px;
+}

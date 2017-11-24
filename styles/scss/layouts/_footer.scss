@@ -1,0 +1,15 @@
+footer{
+  background: $footer-bg-color;
+  color: $text-color-white;
+  font-size: $sm-font-size;
+}
+
+.top-footer{
+  @include justify-content(space-between);
+  margin: 0 auto;
+}
+
+.bottom-footer{
+  @include justify-content(flex-end);
+  padding: 50px 0;
+}

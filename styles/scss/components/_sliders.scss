@@ -1,0 +1,30 @@
+.carousel-inner{
+  height: calc(100vh - 129px);
+  background: rgba(0, 0, 0, .7);
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 129px);
+}
+
+@media (max-width: 991px) {
+  .carousel-inner,
+  .carousel-inner img{
+    height: auto;
+  }
+}
+
+.carousel-indicators{
+  bottom: 10%;
+
+  .active{
+    background: $brand-color;
+  }
+
+  li{
+    background: $bg-second-light;
+  }
+}

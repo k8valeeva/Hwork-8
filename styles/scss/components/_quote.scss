@@ -1,0 +1,33 @@
+.quote{
+  margin: 0 auto;
+  @include flex-direction(column);
+  @include align-items(center);
+  text-align: center;
+  color: $brand-color;
+
+  &-brown{
+    font-size: $captions-font-size;
+    color: $quote-brown-color;
+    line-height: 40px;
+    padding-left: 20px;
+    border-left: 5px solid #eee;
+    margin-bottom: 35px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .quote-brown{
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+  }
+}
+
+.img-quote:before{
+  content: "";
+  display: block;
+  height: 45px;
+  width: 45px;
+  background: url("../../img/q.png") no-repeat;
+  margin-bottom: 30px;
+}
